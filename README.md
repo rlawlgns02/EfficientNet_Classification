@@ -25,9 +25,19 @@ phone_damage_detection/
 |   |   ├── back_normal/         # 핸드폰 뒷면 이미지
 |   |   ├── front_broken/        # 핸드폰 앞면 파손 이미지
 |   |   ├── front_normal/        # 핸드폰 앞면 이미지
-|   |   └── lines/               # 핸드폰 금간 이미지 (생활 기스 이미지)
-│   ├── valid/                   # 검증 데이터 /하위 디렉토리 train과 같음
-│   └── test/                    # 테스트 데이터 /하위 디렉토리 train과 같음
+|   |   └── front_lines/         # 핸드폰 금간 이미지 (생활 기스 이미지)
+│   ├── valid/                   # 검증 데이터
+│   │   ├── back_broken/
+│   │   ├── back_normal/
+│   │   ├── front_broken/
+│   │   ├── front_lines/
+│   │   └── front_normal/
+│   └── test/                   # 테스트 데이터
+│       ├── back_broken/
+│       ├── back_normal/
+│       ├── front_broken/
+│       ├── front_lines/
+│       └── front_normal/                 
 ├── results/                     # 테스트 결과 이미지
 ├── download_dataset.py          # 데이터셋 다운로드 스크립트
 ├── preprocess_data.py           # 데이터 전처리 스크립트
